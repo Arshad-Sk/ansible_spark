@@ -1,0 +1,25 @@
+# Default system properties included when running spark-submit.
+# This is useful for setting default environmental settings.
+
+# Example:
+# spark.master                     spark://master:7077
+# spark.eventLog.enabled           true
+# spark.eventLog.dir               hdfs://namenode:8021/directory
+# spark.serializer                 org.apache.spark.serializer.KryoSerializer
+# spark.driver.memory              5g
+# spark.executor.extraJavaOptions  -XX:+PrintGCDetails -Dkey=value -Dnumbers="one two three"
+
+###---
+# Enable to store the event log
+spark.eventLog.enabled true
+
+#Location where to store event log
+spark.eventLog.dir file:///tmp/spark-events
+
+#Location from where history server to read event log
+spark.history.fs.logDirectory file:///tmp/spark-events
+###---
+
+{% for key, value in spark_defaults_extras.items() | sort %}
+{{ key }} {{ value }}
+{% endfor %}
