@@ -1,10 +1,12 @@
 
 [demo]
-172.31.10.39
-172.31.2.151
+Master-1
+Slave-1
+Slave-2
 
 [master]
-172.31.10.39
+Master-1
 
 [nodes]
-172.31.2.151
+Slave-1
+Slave-2
