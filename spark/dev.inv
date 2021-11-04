@@ -1,17 +1,12 @@
 [demo]
 
-Master-1 ansible_host=172.31.22.216
-
-Slave-1 ansible_host=172.31.9.194
-
-Slave-2 ansible_host=172.31.12.217
+Master-1 ansible_host=172.31.24.210
+Slave-1 ansible_host=172.31.21.89
+Slave-2 ansible_host=172.31.30.131
 
 [master]
-
-Master-1 ansible_host=172.31.22.216
+Master-1 ansible_host=172.31.24.210
 
 [nodes]
-
-Slave-1 ansible_host=172.31.9.194
-
-Slave-2 ansible_host=172.31.12.217
+Slave-1 ansible_host=172.31.21.89
+Slave-2 ansible_host=172.31.30.13
