@@ -1,4 +1,8 @@
 --- # tasks file for spark_proj
+    ####################### Update /etc/hosts file     ##################
+    - include: etchost.yaml
+     ####################### Update /etc/hosts file     ##################
+     
     - name: Create service account for Spark
       user: name={{ spark_user }}
             system=yes
