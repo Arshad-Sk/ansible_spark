@@ -1,6 +1,7 @@
 --- # vars
    spark_version: "2.4.8-bin-hadoop2.7"
-   spark_mirror: "https://downloads.apache.org/spark/spark-2.4.8"
+   #spark_mirror: "https://downloads.apache.org/spark/spark-2.4.8"
+   spark_mirror: "http://archive.apache.org/dist/spark/spark-2.4.8"
    spark_install_java: yes      # Required to check if you need to install Java dependency
    spark_src_dir: "/usr/local/src"
    spark_conf_dir: "/etc/spark"
