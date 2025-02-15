@@ -34,7 +34,8 @@
       become: yes
       become_user: spark
       tags: run
-      authorized_key:
+      #authorized_key:     <<15 feb 2025>>
+      ansible.posix.authorized_key:
         user: spark
         state: present
         key: "{{ lookup('file','buffer/{{item.dest}}-id_rsa.pub')}}"
